@@ -1,27 +1,43 @@
-# FDS 해커톤 템플릿 프로젝트
+# Break week 과제 1
 
-이 프로젝트는 해커톤에서 템플릿으로 사용할 수 있는 프로젝트입니다. 빌드 도구로 [Parcel](https://parceljs.org/)을 사용하고 있으며, [create-react-app](https://github.com/facebook/create-react-app)에서 사용하는 [Babel](http://babeljs.io/) 프리셋인 [babel-preset-react-app](https://github.com/facebook/create-react-app/tree/master/packages/babel-preset-react-app)을 통해 여러 최신 문법을 사용할 수 있도록 설정되어 있습니다.
+수업 시간에 같이 만들어봤던 [할 일 목록](https://codepen.io/dbeat999/pen/dgVxRN)에 **본인만의 디자인**을 입혀서, Netlify에 배포하신 후
 
-## 해커톤 주제
+- Github 저장소 URL
+- Netlify에 배포한 사이트 URL
 
-- 턴제 보드게임
-  - [숫자야구](./docs/number-baseball.md)
-  - [15 퍼즐](./docs/15-puzzle.md)
-  - 오목
+을 저에게 Slack direct message로 제출해주세요.
 
-## 해커톤 채점 기준
+코드를 작성하실 때, [해커톤 템플릿 프로젝트](https://github.com/fds11/fds-game-hackathon)를 **복사**하시고 그 위에서 작업을 해 주세요. 저장소 복사하는 방법을 본 문서 하단에 적어두었으니 참고해주세요.
 
-- **버그**가 없는지
-- **UI**가 얼마나 자연스러운지
-- 코드가 얼마나 **깔끔**한지 (코드 중복은 없는지, 파일이 잘 나뉘어져 있는지, 코드가 읽기 쉬운지...)
-- **도움말**이 얼마나 친절한지
-- **눈을 사로잡는 부분**이 있는지 (애니메이션!)
-- **팀원 간 기여도**가 얼마나 비슷한지
-- Git **커밋 메시지**가 얼마나 깔끔한지
+**기한: 다음주 수요일(10/24) 자정까지**
 
+결과물에 반드시 표시되어야 하는 요소들은 아래와 같습니다:
 
-## 프로젝트 관련 명령
+- 사이트 제목
+- 사용법에 대한 간단한 설명
+- 푸터 (작성자 정보 포함)
+- '삭제', '위로', '아래로' 버튼을 아이콘으로 만들기
 
-- `npm install` - 프로젝트 실행에 필요한 파일을 설치하는 명령. 프로젝틑 최초 실행 시 반드시 실행해주어야 합니다.
-- `npm start` - 개발용 서버를 실행시키는 명령
-- `npm run build` - Netlify 등의 호스팅 서비스에서 사용할 수 있는 HTML, CSS, JS 파일을 생성해주는 명령. `dist` 폴더에 파일이 생성됩니다.
+참고할 만한 자료:
+
+- ['HTML todo list' 유튜브 검색](https://www.youtube.com/results?search_query=html+todo+list) - 디자인을 직접 하기 힘드시다면 디자인을 베낄만한 사이트를 찾아보세요.
+- [Octicons](https://octicons.github.com/) - 여러 아이콘들을 SVG 파일 형태로 제공하는 사이트입니다.
+- [Open Color](https://yeun.github.io/open-color/) - 여러 색깔을 체계적인 형태로 미리 만들어 둔 사이트입니다.
+
+---
+
+### 이미 fork한 저장소를 새로 **복사**하고 싶을 때
+
+1. 복사하고 싶은 저장소를 `git clone` 명령을 사용해 내려받는다.
+2. **내려받은 폴더로 이동한 후**, `rm -rf .git` 명령을 실행한다.
+3. `git init`, `git add .`, `git commit -m "..."` 명령을 차례로 실행한다. (저장소 초기화)
+4. Github에서 새 저장소를 만든 후, 위에서 초기화한 저장소를 푸시한다. (Github에서 새 저장소를 만든 후 나오는 설명 페이지에서, `…or push an existing repository from the command line` 아래에 나오는 두 명령을 그대로 터미널에 복사 붙여넣기 하시면 됩니다.)
+
+---
+
+### Netlify에서 배포하실 때
+
+- Build Command 란에는 `npm run build`를
+- Publish Directory 란에는 `dist`를
+
+입력하시면 됩니다.
