@@ -66,13 +66,9 @@ html {
   flex-direction: column;
   justify-content: center;
 }
-.todo-list-wrapper{
-  height: 20vh;
-}
 
 // title
 .title {
-  // padding-top: 200px;
   font-size: 3rem;
   font-weight: 800;
   color: #fff;
@@ -108,9 +104,19 @@ html {
   border-radius: 15px;
 }
 
-// 새로생성되는 리스트에 추가하는 클래스
+// 새로생성되는 리스트와 관련된 클래스
+.todo-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 20vh;
+  text-align: center;
+}
+
 .todo-list-item,
-.todo-list-item-btns {
+.todo-list-item-btn1,
+.todo-list-item-btn2,
+.todo-list-item-btn3 {
   font-family: "Sunflower", sans-serif;
   vertical-align: middle;
 }
@@ -118,9 +124,21 @@ html {
 .todo-list-item {
   color: #fff;
   padding-bottom: 10px;
+  font-size: 1.3rem;
 }
-.todo-list-item-btns {
+.todo-list-item-btn1,
+.todo-list-item-btn2,
+.todo-list-item-btn3 {
   margin-left: 5px;
+  font-size: 1rem;
+  border-radius: 50px;
+}
+// 리스트 버튼에 아이콘 추가
+.icon-cancel{
+}
+.icon-up-dir{
+}
+.icon-down-dir{
 }
 
 // 푸터
