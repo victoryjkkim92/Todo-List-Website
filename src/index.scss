@@ -43,32 +43,38 @@ ul {
 }
 
 // background image
-body,
-html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+// body,
+// html {
+//   margin: 0;
+//   padding: 0;
+//   height: 100%;
+// }
+// html {
+//   background: url("images/background3.jpg") no-repeat center center fixed;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+// }
+.body {
+background-image: url(images/background3.jpg);
+min-height: 100vh;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+opacity: 0.5;
 }
-html {
-  background: url("images/background3.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 
 // layout
 .main {
   margin: 0 auto;
-  padding-top: 200px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 // title
 .title {
+  margin-top: 200px;
   font-size: 3rem;
   font-weight: 800;
   color: #fff;
@@ -105,13 +111,6 @@ html {
 }
 
 // 새로생성되는 리스트와 관련된 클래스
-.todo-list-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 20vh;
-  text-align: center;
-}
 
 .todo-list-item,
 .todo-list-item-btn1,

@@ -79,10 +79,10 @@ addTodo("과제하기");
 //   // 어떤 키가 눌러졌는지 문자열로 출력됨
 //   console.log('key:', e.key)
 // })
-document.querySelector(".todo-input").addEventListener("keypress", e => {
-  console.log("keypress");
-  // 어떤 키가 눌러졌는지 문자열로 출력됨
-  console.log("key:", e.key);
-  // 아래 화살표 버튼을 눌렀을 때 스크롤이 되는 것을 방지
-  // e.preventDefault()
-});
+// document.querySelector(".todo-input").addEventListener("keypress", e => {
+//   console.log("keypress");
+//   // 어떤 키가 눌러졌는지 문자열로 출력됨
+//   console.log("key:", e.key);
+//   // 아래 화살표 버튼을 눌렀을 때 스크롤이 되는 것을 방지
+//   // e.preventDefault()
+// });
