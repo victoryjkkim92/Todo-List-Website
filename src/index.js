@@ -3,7 +3,7 @@ const todoFormEl = document.querySelector(".todo-form");
 const toDoListEl = document.querySelector(".todo-list");
 
 // 폼 전송이 일어났을 때 발생하는 이벤트
-todoFormEl.addEventListener("submit", e => {
+const formEventEl = todoFormEl.addEventListener("submit", e => {
   // 폼이 실제로 전송되지는 않음!
   e.preventDefault();
   //사용자가 입력한 텍스트 : 폼 요소 안에서 name이 todo인 애의 값을 addTodo 함수의 매개변수로 넘김
@@ -20,7 +20,7 @@ function addTodo(newTodoText) {
   const todoItemEl = document.createElement("li");
   // css 클래스추가
   todoItemEl.classList.add("todo-list-item");
-  todoItemEl.textContent = newTodoText;
+  todoItemEl.textContent = " * " + newTodoText;
   // ul태그 뒤에 li삽입
   toDoListEl.appendChild(todoItemEl);
   // 삭제 버튼 만들기
