@@ -23,6 +23,14 @@ function addTodo(newTodoText) {
   todoItemEl.textContent = newTodoText
   // ul태그 뒤에 li삽입
   toDoListEl.appendChild(todoItemEl)
+
+  //체크박스 만들기
+  const checkButtonEl = document.createElement("input")
+  checkButtonEl.setAttribute("type", "checkbox")
+  checkButtonEl.classList.add("check-box")
+  todoItemEl.appendChild(checkButtonEl);
+
+
   // 삭제 버튼 만들기
   const delButtonEl = document.createElement("button")
   delButtonEl.classList.add("todo-list-item-btn1")

@@ -83,7 +83,7 @@ html {
 }
 
 // form + ul(li)
-.todo-wrapper{
+.todo-wrapper {
   height: 350px;
   overflow: scroll;
 }
@@ -100,6 +100,7 @@ html {
   width: 500px;
   padding: 5px 20px;
   border-radius: 15px;
+  border-bottom: 2px solid #fff;
 }
 .todo-input-btn {
   font-family: "Sunflower", sans-serif;
@@ -107,26 +108,29 @@ html {
   margin-left: 10px;
   padding: 5px 10px;
   border-radius: 15px;
+  color: #fff;
+  background: transparent;
+  border-bottom: 2px solid #fff;
 }
 
 // 새로생성되는 리스트와 관련된 클래스
-.todo-list{
+
+.todo-list {
   margin: 0 auto;
-  width: 500px;
-}
-.todo-list-item,
-.todo-list-item-btn1,
-.todo-list-item-btn2,
-.todo-list-item-btn3 {
-  font-family: "Sunflower", sans-serif;
-  vertical-align: middle;
+  width: 600px;
 }
 
 .todo-list-item {
+  vertical-align: middle;
+  line-height: 20px;
+  text-align: right;
   color: #fff;
   padding: 10px 0;
   border-bottom: 2px solid #fff;
   font-size: 1.3rem;
+}
+.check-box {
+  margin-left: 20px;
 }
 .todo-list-item-btn1,
 .todo-list-item-btn2,
@@ -134,13 +138,11 @@ html {
   margin-left: 10px;
   font-size: 1rem;
   border-radius: 50px;
+  border: 2px solid #fff;
+  color: #fff;
+  background: transparent;
 }
-.line-through{
-  cursor: pointer;
-  text-decoration: line-through;
-  text-decoration-style: wavy;
-  text-decoration-color: red;
-}
+
 // 리스트 버튼에 아이콘 추가
 .icon-cancel {
 }
