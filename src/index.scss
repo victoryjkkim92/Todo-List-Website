@@ -77,9 +77,16 @@ html {
 }
 .title,
 .wel-msg,
+.how-to-use,
 .todo-form,
 .li {
   padding-bottom: 20px;
+}
+// 설명서
+.how-to-use{
+  font-family: "Sunflower", sans-serif;
+  font-size: 10px;
+  color: #fff;
 }
 
 // form + ul(li)
