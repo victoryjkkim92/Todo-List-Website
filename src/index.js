@@ -81,8 +81,6 @@ function addTodo(newTodoText) {
 
 
 
-addTodo("과제하기")
-
 // input에 keydown이벤트 먹이기
 // document.querySelector('.todo-input').addEventListener('keydown', e => {
 //   console.log('키를 눌렸을 때')
